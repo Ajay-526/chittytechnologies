@@ -1,0 +1,81 @@
+.head{
+    text-align: center;
+    padding: 0px;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8em;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    background-color: white;
+}
+#nav{
+    margin-top: 15px;
+    background-color:lightpink;
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 0.4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 20px;
+    background: #FF4E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: grid;
+    padding: 10px;
+    grid-template-areas: "Title Data"
+    "Image Data";
+    grid-template-columns: 420px 1fr;
+    grid-template-rows: 109px 1fr;
+    gap: 10px 10px;
+  }
+  .Title {
+      color:brown;
+      background-color: white;
+      border-radius: 50%;
+      padding: 15px;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-size: 2em;
+      justify-content: center;
+      align-self: center;
+    grid-area: Title;
+  }
+  .Data {
+      text-align: justify;
+    font-size: 1.5em;
+    justify-content: center;
+    align-self: center; 
+    grid-area: Data;
+  }
+  .Image {
+    
+    justify-content: center;
+    align-self: center;
+    grid-area: Image;
+  }
